@@ -144,68 +144,98 @@
 						</section>
 					</article>
 				</section>
-				</<article>
+			</article>
 
+			<article>
+				<h4>
+					Dataset Analysis
+				</h4>
+				<section>
 					<article>
-						<h4>
-							Dataset Analysis
-						</h4>
+						<h5>
+							datos_diarios_2023.csv
+						</h5>
+						<p>
+							The air quality dataset from the Madrid City Council contains daily measurements of various pollutants at several stations distributed throughout the city, including data on contaminants and their validity. This dataset allows for the analysis of air quality trends in Madrid over time.
+						</p>
 						<section>
-							<article>
-								<h5>
-									datos_diarios_2023.csv
-								</h5>
-								<p>
-									The air quality dataset from the Madrid City Council contains daily measurements of various pollutants at several stations distributed throughout the city, including data on contaminants and their validity. This dataset allows for the analysis of air quality trends in Madrid over time.
-								</p>
-								<section>
-									<h6>
-										Key Columns:
-									</h6>
-									<ul>
-										<li><strong>PROVINCIA, MUNICIPIO, ESTACION</strong>: Identifiers for location and station.</li>
-										<li><strong>MAGNITUD</strong>: Likely represents the type of measurement.</li>
-										<li><strong>PUNTO_MUESTREO</strong>: The sampling point identifier.</li>
-										<li><strong>ANO</strong> and <strong>MES</strong>: Year and month.</li>
-										<li><strong>D01 to D31</strong>: Daily data for up to 31 days of the month.</li>
-										<li><strong>V01 to V31</strong>: Validation flags for the corresponding day (D01 to D31), likely indicating whether the data is valid (V) or not (N).</li>
-									</ul>
-								</section>
-								<section>
-									<h6>
-										Data Types:
-									</h6>
-									<ul>
-										<li><span class="highlight">Numeric columns</span>: Most daily values (D01, D02, etc.) are floats, representing some continuous measurement.</li>
-										<li><span class="highlight">Categorical columns</span>: Columns like V01, V02, etc., contain validation flags (V for valid, N for invalid).</li>
-									</ul>
-								</section>
-								<section>
-									<h6>
-										Further Analysis:
-									</h6>
-									<ul>
-										<li><span class="highlight">Count</span>: Each daily measurement column has 1,566 entries, which means that the dataset is complete in terms of the daily values recorded.</li>
-										<li><span class="highlight">Mean</span>: The mean values range from 14.77 to 25.60 across different days. The values are relatively consistent, with some fluctuation depending on the day.</li>
-										<li><span class="highlight">Min/max values</span>: The minimum value for all days is 0. Maximum values reach as high as 354, indicating some outliers or high peaks in the data.</li>
-									</ul>
-								</section>
-						</section>		
+							<h6>
+								Key Columns:
+							</h6>
+							<ul>
+								<li><span class="highlight">PROVINCIA, MUNICIPIO, ESTACION</span>: Identifiers for location and station.</li>
+								<li><span class="highlight">MAGNITUD</span>: Likely represents the type of measurement.</li>
+								<li><span class="highlight">PUNTO_MUESTREO</span>: The sampling point identifier.</li>
+								<li><span class="highlight">ANO</span> and <span class="highlight">MES</span>: Year and month.</li>
+								<li><span class="highlight">D01 to D31</span>: Daily data for up to 31 days of the month.</li>
+								<li><span class="highlight">V01 to V31</span>: Validation flags for the corresponding day (D01 to D31), likely indicating whether the data is valid (V) or not (N).</li>
+							</ul>
+						</section>
+						<section>
+							<h6>
+								Data Types:
+							</h6>
+							<ul>
+								<li><span class="highlight">Numeric columns</span>: Most daily values (D01, D02, etc.) are floats, representing some continuous measurement.</li>
+								<li><span class="highlight">Categorical columns</span>: Columns like V01, V02, etc., contain validation flags (V for valid, N for invalid).</li>
+							</ul>
+						</section>
+						<section>
+							<h6>
+								Further Analysis:
+							</h6>
+							<ul>
+								<li><span class="highlight">Count</span>: Each daily measurement column has 1,566 entries, which means that the dataset is complete in terms of the daily values recorded.</li>
+								<li><span class="highlight">Mean</span>: The mean values range from 14.77 to 25.60 across different days. The values are relatively consistent, with some fluctuation depending on the day.</li>
+								<li><span class="highlight">Min/max values</span>: The minimum value for all days is 0. Maximum values reach as high as 354, indicating some outliers or high peaks in the data.</li>
+							</ul>
+						</section>
 					</article>
-
 					<article>
-						<h4>
-							Resource Name Strategy
-						</h4>
-						<ul>
-							<li>URI form (resources): <code>http://mAIRdrid.org/{vX}/ontology/resources/{resourceType}/{resourceID}</code></li>
-							<li>URI form (individuals): <code>http://mAIRdrid.org/{vX}/ontology/instances/{resourceType}/{resourceID}</code></li>
-							<li> Identifiers: Identifiers are unique across both paths to avoid confusion.</li>
-							<li>URIs domain: mAIRdrid.org</li>
-							<li>Content negotiation: The ontology will support content negotiation to serve different formats such as RDF/XML, Turtle, and JSON-LD based on the client's request.</li>
-							<li>Pattern: <code>{resourceType}</code> should represent categories such as "AirQualityMetric", "Measurement", or "Station", while <code>{resourceID}</code> will be a unique identifier (e.g., a UUID or a sequential number).</li>
-						</ul>
+						<h5>datos_diarios_2024.csv</h5>
+						<p></p>
+						<section>
+							<h6>Key Columns:</h6>
+							<ul>
+								<li><span class="highlight">PROVINCIA, MUNICIPIO, ESTACION</span>: Identifiers for location and station.</li>
+								<li><span class="highlight">MAGNITUD</span>: Represents the type of measurement.</li>
+								<li><span class="highlight">PUNTO_MUESTREO</span>: The sampling point identifier.</li>
+								<li><span class="highlight">ANO</span> and <span class="highlight">MES</span>: Year and month.</li>
+								<li><span class="highlight">D01 to D31</span>: Daily data for up to 31 days of the month.</li>
+								<li><span class="highlight">V01 to V31</span>: Validation flags for the corresponding day (D01 to D31), indicating whether the data is valid (V) or not (N).</li>
+							</ul>
+						</section>
+						<section>
+							<h6>Data Types:</h6>
+							<ul>
+								<li><span class="highlight">Numeric columns</span>: Daily values (D01, D02, etc.) are floats, representing some continuous measurement.</li>
+								<li><span class="highlight">Categorical columns</span>: Columns like V01, V02, etc., contain validation flags (V for valid, N for invalid).</li>
+							</ul>
+						</section>
+						<section>
+							<h6>Further Analysis:</h6>
+							<ul>
+								<li><span class="highlight">Count</span>: Each daily measurement column has 1,035 entries, meaning that the dataset is complete in terms of the recorded daily values.</li>
+								<li><span class="highlight">Mean</span>: The mean values range from 13.09 to 23.21, showing some variability depending on the day.</li>
+								<li><span class="highlight">Min/max values</span>: The minimum value for all days is 0. Maximum values reach as high as 358, indicating the presence of high peaks or outliers in the data.</li>
+							</ul>
+						</section>
 					</article>
+				</section>
+			</article>
+			<article>
+				<h4>
+					Resource Name Strategy
+				</h4>
+				<ul>
+					<li>URI form (resources): <code>http://mAIRdrid.org/{vX}/ontology/{ontologyName}#{className}</code></li>
+					<li>URI form (individuals): <code> http://mAIRdrid.org/{vX}/resource/{className}/{identifier}</code></li>
+					<li> Identifiers: Identifiers are unique across both paths to avoid confusion.</li>
+					<li>URIs domain: mAIRdrid.org</li>
+					<li>Content negotiation: The ontology will support content negotiation to serve different formats such as RDF/XML, Turtle, and JSON-LD based on the client's request.</li>
+					<li>Pattern: <code>{resourceType}</code> should represent categories such as "AirQualityMetric", "Measurement", or "Station", while <code>{identifier}</code> will be a unique identifier (e.g., a UUID or a sequential number).</li>
+				</ul>
+			</article>
 		</main>
 		<footer>
 			🄯 2024 - Rafael Orihuela Brindis, Pedro Pedregal Pérez, Elías Herrero Lázaro, Carlos de la Cruz Ayala Vargas
